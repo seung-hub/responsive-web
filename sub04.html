@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: #f9f5ad;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+}
+p{
+    font-size: 17px;;
+}
+ul{
+    list-style-type: none;
+}
+#header{
+    height:150px;
+    position: relative;
+}
+#top_audio {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#logo{
+    position: relative;
+    top:30px;
+    left:30px;
+}
+#main_menu{
+    position:relative;
+    top:30px;
+    font-size: 15px;
+    color:black;
+    background-color: white;
+    margin-top: 15px;
+    padding:12px;
+    text-align: center;
+}
+#main_menu li{
+    padding:0 20px 0 20px;
+    display: inline;
+}
+#main_menu a {
+  text-decoration: none;
+  color: black;
+}
+.info_box {
+  background-color: #f5be7a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 500px;
+  margin: 30px auto;
+  font-size: 14px;
+}
+.img_box img {
+  width: 200px;
+}
+.img_box, .info_box{
+    display: inline-block;
+    vertical-align: top;
+    margin: 100px 0 50px 50px;
+}
+footer{
+    padding:20px 0 0 15px;
+    border-top: solid 3px white;
+    color:black;
+}
+footer #address{
+    float: left;
+}
+footer #footer_menu li{
+    margin-top: 5px;
+}
+footer #company_info {
+    margin-top: 20px;
+}
+footer #company_info li{
+    margin-top: 2px;
+}
+footer #copyright{
+    margin-top: 10px;
+    font-size: 11px;
+    color:#888888;
+}
+</style>
+</head>
+<body>
+<div id="header">
+    <img id="logo" src="logo.jpg" width="250" height="80">
+    <ul id="main_menu">
+        <li><a href="sub01.html">대전 소개</a></li>
+        <li><a href="sub02.html">관광지</a></li>
+        <li><a href="sub03.html">먹거리</a></li>
+        <li><a href="sub04.html">야구</a></li>
+        <li><a href="sub05.html">가는 길</a></li>
+    </ul>
+    <audio id="top_audio" src="song.mp3" autoplay controls loop></audio>
+</div>
+
+<div class="info_box">
+  한화 이글스는 2025년 6월 1일 현재 KBO 리그에서 2위를 기록하고 있다. <br>
+  2025년 5월 8일 기준으로 한화는 9연승을 기록하며 단독 1위에 올랐으며 <br> 당시 팀 성적은 24승 13패로, 승률은 0.649이다. <br>
+  한화 이글스의 선수로는 문동주 선수, 노시환 선수, 류현진 선수 등이 있다.
+</div>
+<div class="img_box">
+    <img src="baseball2.jpg">
+  </div>
+
+  <div class="img_box">
+    <img src="baseball1.jpg">
+  </div>
+</div>
+<footer>
+    <article id="address">
+        <ul id="footer_menu">
+            <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+            <li>본 사이트는 대전 지역 관광 정보 제공을 위한 비공식 안내 페이지입니다.</li>
+        </ul>
+        <ul id="company_info">
+            <li>제작자 : 백승혜</li>
+            <li>전화번호 : 010-3976-2571</li>
+            <li id="copyright">Copyright by Daejeon Company All Rights Reserved.</li>
+        </ul>
+    </article>
+</footer>
+</body>
+</html>

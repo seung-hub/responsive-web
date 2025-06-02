@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: #f9f5ad;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+}
+p{
+    font-size: 17px;;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+.clear{
+    clear:both;
+}
+
+#header{
+    height:150px;
+    position: relative;
+}
+#logo{
+    position: relative;
+    top:30px;
+    left:30px;
+}
+#main_menu{
+    position:relative;
+    top:30px;
+    font-size: 15px;
+    color:black;
+    background-color: white;
+    margin-top: 15px;
+    padding:12px;
+    text-align: center;
+}
+#main_menu li{
+    padding:0 20px 0 20px;
+    display: inline;
+}
+#main_menu a {
+  text-decoration: none;
+  color: black;
+}
+#left{
+    width:200px;
+    height:600px;
+    background-color: #343333;
+    color:#e2e2e2;
+}
+#left h2{
+    font-weight: normal;
+    padding:20px 0 0 30px;
+}
+#left ul{
+    font-size: 14px;
+    padding:10px 10px 5px 25px;
+}
+#left li{
+    padding:3px;
+}
+#left a {
+  text-decoration: underline;
+  color: #e2e2e2;
+}
+#left a:hover {
+  color: blue;
+}
+#right{
+    width:650px;
+    height:600px;
+    background-color: #252525;
+    padding-left: 24px;
+}
+#container {
+    display: flex;
+    gap: 0px;
+    margin-left: 250px;
+    margin-top:30px;
+}
+
+#main_title{
+    width:572px;
+    padding:10px;
+    border:solid 5px #444444;
+    margin:24px 0 0 0px;
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: bold;
+}
+#main_img{
+    margin: 15px 0 0 50px;
+    width:500px;
+    height:377px;
+}
+#thumnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+#thumnail #move_left{
+    width: 21px;
+    height: 30px;
+}
+#thumnail #move_right{
+    width: 21px;
+    height: 30px;
+}
+#thumnail #photos li{
+    display: inline;
+    margin-left: 10px;
+}
+#thumnail #photos img{
+    border:solid 5px #3d3d3d;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+#thumnail #photos a:hover img{
+    border: solid 5px #ffffff;
+}
+footer{
+    padding:20px 0 0 15px;
+    border-top: solid 3px white;
+    color:black;
+}
+footer #address{
+    float: left;
+}
+footer #footer_menu li{
+    margin-top: 5px;
+}
+footer #company_info {
+    margin-top: 20px;
+}
+footer #company_info li{
+    margin-top: 2px;
+}
+footer #copyright{
+    margin-top: 10px;
+    font-size: 11px;
+    color:#888888;
+}
+</style>
+</head>
+<body>
+<div id="header">
+    <img id="logo" src="logo.jpg" width="250" height="80">
+    <ul id="main_menu">
+        <li><a href="sub01.html">대전 소개</a></li>
+        <li><a href="sub02.html">관광지</a></li>
+        <li><a href="sub03.html">먹거리</a></li>
+        <li><a href="sub04.html">야구</a></li>
+        <li><a href="sub05.html">가는 길</a></li>
+    </ul>
+</div>
+<div id="container">
+<div id="left">
+    <h2>사계절별 관광지</h2>
+    <ul>
+    <li class="submenu"><a href="spring.html" target="_blank">+ 봄</a></li>
+    <li class="submenu"><a href="summer.html">+ 여름</a></li>
+    <li class="submenu"><a href="fall.html">+ 가을</a></li>
+     <li class="submenu"><a href="winter.html">+ 겨울</a></li>
+</ul>
+</div>
+<div id="right">
+    <div id="main_title">
+        장태산 자유휴양림
+    </div>
+    <img id="main_img" src="summer.jpg">
+    <div id="thumnail">
+        <img id="move_left" src="left.png">
+        <ul id="photos">
+            <li><a href="#"><img src="spring.jpg" title="한밭수목원"></a></li>
+            <li><a href="#"><img src="summer.jpg" title="장태산 자유휴양림"></a></li>
+            <li><a href="#"><img src="fall.jpg" title="오월드"></a></li>
+            <li><a href="#"><img src="winter.jpg" title="엑스포"></a></li>
+        </ul>
+        <img id="move_right" src="right.png">
+    </div>
+</div>
+</div>
+<footer>
+    <article id="address">
+        <ul id="footer_menu">
+            <li>개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부</li>
+            <li>본 사이트는 대전 지역 관광 정보 제공을 위한 비공식 안내 페이지입니다.</li>
+        </ul>
+        <ul id="company_info">
+            <li>제작자 : 백승혜</li>
+            <li>전화번호 : 010-3976-2571</li>
+            <li id="copyright">Copyright by Daejeon Company All Rights Reserved.</li>
+        </ul>
+    </article>
+</footer>
+</body>
+</html>
